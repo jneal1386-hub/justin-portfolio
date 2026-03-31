@@ -55,7 +55,8 @@ export default function Layout({ children }) {
         </div>
         <div style={{ display:"flex", gap:20 }}>
           <a href="https://linkedin.com/in/justintneal" target="_blank" rel="noreferrer" style={{ fontSize:11, color:T3 }}>LinkedIn</a>
-          <a href="https://www.toptal.com" target="_blank" rel="noreferrer" style={{ fontSize:11, color:T3 }}>Toptal</a>
+          <a href="https://www.toptal.com" target="_blank" rel="noreferrer" 
+<a href="/JustinNeal_Resume.pdf" target="_blank" style={{ fontSize:11, color:"#00D4D4" }}>Download Resume</a>style={{ fontSize:11, color:T3 }}>Toptal</a>
         </div>
       </footer>
     </div>
