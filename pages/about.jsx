@@ -32,7 +32,7 @@ export default function About() {
         <p style={{ fontFamily:"'DM Mono',monospace", fontSize:10, color:CY, letterSpacing:".16em", textTransform:"uppercase", marginBottom:0 }}>
           Principal Program Manager · Enterprise AI Transformation
         </p>
-<img src="/jtnheadshot.jpeg" alt="Justin T. Neal" style={{ width:160, height:160, borderRadius:"50%", objectFit:"cover", border:"3px solid #00D4D4", marginBottom:48, display:"block" }}/>
+<img src="/jtnheadshot.jpeg" alt="Justin T. Neal" style={{ width:140, height:140, borderRadius:"50%", objectFit:"cover", border:"3px solid #00D4D4", marginTop:16, marginBottom:32, display:"block" }}/>
       </div>
 
       {/* BIO */}
