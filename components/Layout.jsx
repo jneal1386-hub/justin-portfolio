@@ -8,7 +8,6 @@ const T3 = "rgba(242,244,247,0.35)";
 const BD2 = "rgba(242,244,247,0.08)";
 
 const links = [
-  { href: "/", label: "HOME" },
   { href: "/work", label: "WORK" },
   { href: "/voice", label: "THOUGHT LEADERSHIP" },
   { href: "/awards", label: "AWARDS" },
@@ -27,18 +26,18 @@ export default function Layout({ children }) {
         @media(max-width:700px){.nav-links{display:none!important}.page-inner{padding:48px 20px!important}}
       `}</style>
 
-      <nav style={{ display:"flex", justifyContent:"space-between", alignItems:"center", padding:"18px 48px", borderBottom:`1px solid ${BD2}`, position:"sticky", top:0, zIndex:100, background:"rgba(26,31,46,0.97)", backdropFilter:"blur(16px)" }}>
-        <Link href="/" style={{ fontFamily:"'Playfair Display',serif", fontSize:16, fontWeight:800, color:CY, lineHeight:1.1 }}>
+      <nav style={{ display:"flex", justifyContent:"space-between", alignItems:"center", padding:"18px 48px", borderBottom:"1px solid rgba(242,244,247,0.08)", position:"sticky", top:0, zIndex:100, background:"rgba(26,31,46,0.97)", backdropFilter:"blur(16px)" }}>
+        <Link href="/" style={{ fontFamily:"'Playfair Display',serif", fontSize:15, fontWeight:800, color:CY, lineHeight:1.1 }}>
           JUSTIN<br/>NEAL
         </Link>
         <div className="nav-links" style={{ display:"flex", gap:28 }}>
-          {links.slice(1).map(l => (
-            <Link key={l.href} href={l.href} style={{ fontSize:11, fontWeight:500, letterSpacing:".12em", color: router.pathname === l.href ? CY : T3, borderBottom: router.pathname === l.href ? `1px solid ${CY}` : "none", paddingBottom:2 }}>
+          {links.map(l => (
+            <Link key={l.href} href={l.href} style={{ fontSize:11, fontWeight:500, letterSpacing:".12em", color: router.pathname === l.href ? CY : T3, borderBottom: router.pathname === l.href ? "1px solid #00D4D4" : "none", paddingBottom:2 }}>
               {l.label}
             </Link>
           ))}
         </div>
-        <a href="mailto:jneal@justintneal.com" style={{ background:CY, color:BG, fontSize:11, fontWeight:700, letterSpacing:".1em", textTransform:"uppercase", padding:"9px 18px" }}>
+        <a href="mailto:jneal1386@gmail.com" style={{ background:CY, color:BG, fontSize:11, fontWeight:700, letterSpacing:".1em", textTransform:"uppercase", padding:"9px 18px" }}>
           GET IN TOUCH
         </a>
       </nav>
@@ -47,16 +46,15 @@ export default function Layout({ children }) {
         {children}
       </main>
 
-      <footer style={{ borderTop:`1px solid ${BD2}`, padding:"28px 48px", display:"flex", justifyContent:"space-between", alignItems:"center", background:BG }}>
+      <footer style={{ borderTop:"1px solid rgba(242,244,247,0.08)", padding:"28px 48px", display:"flex", justifyContent:"space-between", alignItems:"center", background:BG }}>
         <div>
           <p style={{ fontFamily:"'Playfair Display',serif", fontSize:14, fontWeight:700, color:CY, marginBottom:5 }}>JUSTIN T. NEAL</p>
           <p style={{ fontSize:11, color:T3 }}>Principal Program Manager · Enterprise AI Transformation · Holly Springs, NC</p>
-          <a href="mailto:jneal@justintneal.com" style={{ fontSize:11, color:CY, marginTop:6, display:"block" }}>jneal@justintneal.com</a>
         </div>
         <div style={{ display:"flex", gap:20 }}>
           <a href="https://linkedin.com/in/justintneal" target="_blank" rel="noreferrer" style={{ fontSize:11, color:T3 }}>LinkedIn</a>
-          <a href="https://www.toptal.com" target="_blank" rel="noreferrer" 
-<a href="/JustinNeal_Resume.pdf" target="_blank" style={{ fontSize:11, color:"#00D4D4" }}>Download Resume</a>style={{ fontSize:11, color:T3 }}>Toptal</a>
+          <a href="https://www.toptal.com" target="_blank" rel="noreferrer" style={{ fontSize:11, color:T3 }}>Toptal</a>
+          <a href="/JustinNeal_Resume.pdf" target="_blank" style={{ fontSize:11, color:CY }}>Download Resume</a>
         </div>
       </footer>
     </div>
